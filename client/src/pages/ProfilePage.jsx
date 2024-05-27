@@ -13,7 +13,7 @@ export const ProfilePage = () => {
   }
 
   async function logout() {
-    await axios.post('/logout');
+    await axios.post('https://frontend-airbnb-coral.vercel.app/logout');
     setRedirect('/');
     setUser(null);
   }
