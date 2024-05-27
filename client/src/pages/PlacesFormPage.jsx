@@ -76,7 +76,7 @@ export default function PlacesFormPage() {
       }
     
     if (redirect) {
-        return <Navigate to={'https://frontend-airbnb-coral.vercel.app/account/places'} />
+        return <Navigate to={'/places'} />
       }
     
   return (
