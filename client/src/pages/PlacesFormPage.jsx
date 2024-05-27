@@ -22,7 +22,7 @@ export default function PlacesFormPage() {
     if (!id) {
       return;
     }
-    axios.get('https://frontend-airbnb-coral.vercel.app/places/'+id).then(response => {
+    axios.get('https://endterm-86tf.onrender.com/'+id).then(response => {
        const {data} = response;
        setTitle(data.title);
        setAddress(data.address);
