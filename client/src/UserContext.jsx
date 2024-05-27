@@ -7,7 +7,7 @@ export  function UserContextProvider({children}){
     const[ready,setReady] = useState(false);
     useEffect(() => {
       if (!user) {
-        axios.get('/profile').then((response) => {
+        axios.get('https://frontend-airbnb-coral.vercel.app/profile').then((response) => {
           setUser(response.data);
           setReady(true);
         });
