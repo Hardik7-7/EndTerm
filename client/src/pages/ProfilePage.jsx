@@ -26,7 +26,7 @@ export const ProfilePage = () => {
   }
 
   if (ready && !user && !redirect) {
-    return <Navigate to={'/login'} />
+    return <Navigate to={'https://frontend-airbnb-coral.vercel.app/login'} />
   }
 
   if (redirect) {
