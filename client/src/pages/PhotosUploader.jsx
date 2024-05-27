@@ -18,7 +18,7 @@ export default function PhotosUploader({addedPhotos,onChange}) {
     for (let i = 0; i < files.length; i++) {
       data.append('photos', files[i]);
     }
-    axios.post('https://frontend-airbnb-coral.vercel.app/upload', data, {
+    axios.post('https://endterm-86tf.onrender.com/upload', data, {
       headers: {'Content-type':'multipart/form-data'}
     }).then(response => {
       const {data:filenames} = response;
