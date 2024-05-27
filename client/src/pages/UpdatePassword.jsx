@@ -13,7 +13,7 @@ const UpdatePassword = () => {
     setMessage('');
 
     try {
-      const response = await axios.post('https://frontend-airbnb-coral.vercel.app/update-password', {
+      const response = await axios.post('https://endterm-86tf.onrender.com//update-password', {
         userId: 'user_id_here', // Replace with the actual user ID
         currentPassword,
         newPassword,
