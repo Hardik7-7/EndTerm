@@ -38,7 +38,7 @@ export default function BookingWidget({place}) {
         price: numberOfNights * place.price,
       });
       const bookingId = response.data._id;
-      setRedirect(`https://frontend-airbnb-coral.vercel.app/account/bookings/${bookingId}`);
+      setRedirect(`/account/bookings/${bookingId}`);
     } catch (error) {
         alert("Please Login First");
         navigate('/login'); 
