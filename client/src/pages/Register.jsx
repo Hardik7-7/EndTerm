@@ -13,7 +13,7 @@ export const Register = () => {
   async function registerUser(ev){
     ev.preventDefault();
     try{
-        await axios.post('https://frontend-airbnb-coral.vercel.app/register',{name,email,password});
+        await axios.post('https://endterm-86tf.onrender.com/register',{name,email,password});
         alert("Registration Successful. You can Login!");
       }
     catch(e){ 
