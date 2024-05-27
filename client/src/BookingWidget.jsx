@@ -41,7 +41,7 @@ export default function BookingWidget({place}) {
       setRedirect(`https://frontend-airbnb-coral.vercel.app/account/bookings/${bookingId}`);
     } catch (error) {
         alert("Please Login First");
-        navigate('/login'); 
+        navigate('https://frontend-airbnb-coral.vercel.app/login'); 
     }
   }
   if (redirect) {
