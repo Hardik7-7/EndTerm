@@ -123,7 +123,7 @@ app.post('/login',async (req,res)=>{
        res.json("Not Found");
     }
 });
-app.get('/profile',async(req,res)=>{
+app.get('https://frontend-airbnb-coral.vercel.app/profile',async(req,res)=>{
    const{token} = req.cookies;
     if(token){
       jwt.verify(token,jwtSecret,{},async (err,user)=>{
