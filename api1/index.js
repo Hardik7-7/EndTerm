@@ -19,7 +19,7 @@ const { getMaxListeners } = require('events');
 const nodemailer = require("nodemailer");
 // Lflf8UC1IGj57b5x
 const corsOptions = {
-  origin: 'https://your-vercel-app.vercel.app', // Replace with your Vercel deployment URL
+  origin: 'https://frontend-airbnb-coral.vercel.app', // Replace with your Vercel deployment URL
   credentials: true, // Allow credentials (cookies, authorization headers, etc.)
 };
 app.use(cors(corsOptions));
