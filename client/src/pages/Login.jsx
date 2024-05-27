@@ -20,7 +20,7 @@ export const Login = () => {
       }
     }
     if(redirect){
-       return <Navigate to={'https://frontend-airbnb-coral.vercel.app/'}/>
+       return <Navigate to={'/'}/>
     }
   return (
     <div className='mt-4 grow flex items-center justify-around'>
