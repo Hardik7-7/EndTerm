@@ -28,7 +28,7 @@ export default function BookingWidget({place}) {
 
   async function bookThisPlace() {
     try {
-      const response = await axios.post('/https://frontend-airbnb-coral.vercel.app/bookings', {
+      const response = await axios.post('https://endterm-86tf.onrender.com//bookings', {
         checkIn,
         checkOut,
         numberOfGuests,
