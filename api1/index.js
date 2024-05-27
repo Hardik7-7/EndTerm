@@ -18,10 +18,11 @@ const mime = require('mime-types');
 const { getMaxListeners } = require('events');
 const nodemailer = require("nodemailer");
 // Lflf8UC1IGj57b5x
-app.use(cors(
-   { credentials : true,
-   origin:'http://localhost:5173'}
-));
+const corsOptions = {
+  origin: 'https://your-vercel-app.vercel.app', // Replace with your Vercel deployment URL
+  credentials: true, // Allow credentials (cookies, authorization headers, etc.)
+};
+app.use(cors(corsOptions));
 app.use('/uploads',express.static(__dirname + '/uploads'));
 mongoose.connect('mongodb+srv://hardiksinfg5:Lflf8UC1IGj57b5x@cluster0.pggbtns.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
 app.use(express.json());
