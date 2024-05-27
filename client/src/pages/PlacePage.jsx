@@ -12,7 +12,7 @@ export default function PlacePage() {
     if (!id) {
       return;
     }
-    axios.get(`/places/${id}`).then(response => {
+    axios.get(`https://frontend-airbnb-coral.vercel.app/places/${id}`).then(response => {
       setPlace(response.data);
     });
   }, [id]);
