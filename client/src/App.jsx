@@ -28,7 +28,7 @@ function App() {
               <Route path="/login" element={<Login/>} />
               <Route path="/register" element={<Register/>} />
               <Route path="/updatepassword" element={<UpdatePassword/>} />
-              <Route path="https://frontend-airbnb-coral.vercel.app/account" element={<ProfilePage/>} />
+              <Route path="/account" element={<ProfilePage/>} />
               <Route path="/account/places" element={<PlacesPage/>} />
               <Route path="/account/places/new" element={<PlacesFormPage/>} />
               <Route path="/account/places/:id" element={<PlacesFormPage />} />
