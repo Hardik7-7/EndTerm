@@ -17,7 +17,7 @@ import BookingPage from './pages/BookingPage'
 import BookingsPage from './pages/BookingsPage'
 import  UpdatePassword  from './pages/UpdatePassword'
 
-axios.defaults.baseURL = 'http://localhost:4000'
+axios.defaults.baseURL = 'https://frontend-airbnb-coral.vercel.app'
 axios.defaults.withCredentials = true;
 function App() {
   return (
