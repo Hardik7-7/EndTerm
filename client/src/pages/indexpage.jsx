@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 export const IndexPage = () => {
   const [places,setPlaces] = useState([]);
   useEffect(() => {
-    axios.get('/places').then(response => {
+    axios.get('https://endterm-86tf.onrender.com/places').then(response => {
       setPlaces(response.data);
     });
   }, []);
