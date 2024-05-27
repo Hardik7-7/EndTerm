@@ -24,7 +24,9 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 app.use('/uploads',express.static(__dirname + '/uploads'));
-mongoose.connect('mongodb+srv://hardiksinfg5:Lflf8UC1IGj57b5x@cluster0.pggbtns.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
+mongoose.connect('mongodb+srv://hardiksinfg5:Lflf8UC1IGj57b5x@cluster0.pggbtns.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',{ useNewUrlParser: true, useUnifiedTopology: true })
+) .then(() => console.log('MongoDB connected successfully'))
+  .catch(err => console.error('Error connecting to MongoDB:', err));
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
