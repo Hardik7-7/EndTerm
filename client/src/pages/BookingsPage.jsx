@@ -9,7 +9,7 @@ import BookingDates from "../BookingDates";
 export default function BookingsPage() {
   const [bookings,setBookings] = useState([]);
   useEffect(() => {
-    axios.get('https://frontend-airbnb-coral.vercel.app/bookings').then(response => {
+    axios.get('https://endterm-86tf.onrender.com//bookings').then(response => {
       setBookings(response.data);
     });
   }, []);
