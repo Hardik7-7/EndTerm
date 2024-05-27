@@ -10,7 +10,7 @@ export const Login = () => {
   async function handleLogin(ev){
     ev.preventDefault();
     try{
-       const response = await axios.post('/login',{email,password});
+       const response = await axios.post('https://endterm-86tf.onrender.com/login',{email,password});
          setUser(response.data);
          alert("Login Successful");
          setRedirect(true);
