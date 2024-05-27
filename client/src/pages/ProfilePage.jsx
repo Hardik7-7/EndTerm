@@ -13,12 +13,12 @@ export const ProfilePage = () => {
   }
 
   async function logout() {
-    await axios.post('https://frontend-airbnb-coral.vercel.app/logout');
+    await axios.post('/logout');
     setRedirect('/');
     setUser(null);
   }
   async function updatepass() {
-    setRedirect('https://frontend-airbnb-coral.vercel.app/updatepassword');
+    setRedirect('/updatepassword');
   }
 
   if (!ready) {
@@ -26,7 +26,7 @@ export const ProfilePage = () => {
   }
 
   if (ready && !user && !redirect) {
-    return <Navigate to={'https://frontend-airbnb-coral.vercel.app/login'} />
+    return <Navigate to={'/login'} />
   }
 
   if (redirect) {
