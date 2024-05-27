@@ -6,7 +6,7 @@ import PlaceImg from "../PlaceImage";
 export default function PlacesPage() {
   const [places,setPlaces] = useState([]);
   useEffect(() => {
-    axios.get('/user-places').then(({data}) => {
+    axios.get('https://frontend-airbnb-coral.vercel.app/user-places').then(({data}) => {
       setPlaces(data);
     });
   }, []);
