@@ -18,7 +18,7 @@ export const Register = () => {
       }
     catch(e){ 
       alert(e.response.data.error);
-      navigate('https://frontend-airbnb-coral.vercel.app/login');
+      navigate('/login');
       }
     }
   return (
