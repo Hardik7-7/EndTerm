@@ -28,7 +28,7 @@ export default function BookingWidget({place}) {
 
   async function bookThisPlace() {
     try {
-      const response = await axios.post('/bookings', {
+      const response = await axios.post('/https://frontend-airbnb-coral.vercel.app/bookings', {
         checkIn,
         checkOut,
         numberOfGuests,
@@ -38,7 +38,7 @@ export default function BookingWidget({place}) {
         price: numberOfNights * place.price,
       });
       const bookingId = response.data._id;
-      setRedirect(`/account/bookings/${bookingId}`);
+      setRedirect(`https://frontend-airbnb-coral.vercel.app/account/bookings/${bookingId}`);
     } catch (error) {
         alert("Please Login First");
         navigate('/login'); 
