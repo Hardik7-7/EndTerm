@@ -22,7 +22,7 @@ export default function PlacesFormPage() {
     if (!id) {
       return;
     }
-    axios.get('/places/'+id).then(response => {
+    axios.get('https://frontend-airbnb-coral.vercel.app/places/'+id).then(response => {
        const {data} = response;
        setTitle(data.title);
        setAddress(data.address);
@@ -63,13 +63,13 @@ export default function PlacesFormPage() {
         };
         if (id) {
           // update
-          await axios.put('/places', {
+          await axios.put('https://frontend-airbnb-coral.vercel.app/places', {
             id, ...placeData
           });
           setRedirect(true);
         } else {
           // new place
-          await axios.post('/places', placeData);
+          await axios.post('https://frontend-airbnb-coral.vercel.app/places', placeData);
           setRedirect(true);
         }
     
